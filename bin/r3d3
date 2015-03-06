@@ -1,6 +1,8 @@
 #!/usr/bin/env ruby
 
+require 'bundler/setup'
 require 'r3d3'
 
-Menu.start(ARGV)
+
+Menu.new
 
