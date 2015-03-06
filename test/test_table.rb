@@ -1,5 +1,5 @@
 require 'minitest_helper'
-require_relative '../lib/r3d3/table'
+require_relative '../lib/r3d3/models/table'
 
 class TestTable < Minitest::Test
 

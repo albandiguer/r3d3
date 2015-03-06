@@ -1,5 +1,5 @@
 require 'minitest_helper'
-require_relative '../lib/r3d3/robot'
+require_relative '../lib/r3d3/models/robot'
 
 class TestRobot < Minitest::Test
 
