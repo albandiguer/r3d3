@@ -4,19 +4,16 @@ require_relative '../lib/r3d3/models/robot'
 class TestRobot < Minitest::Test
 
   def test_place
-    robot = Robot.new
     robot.place(1,2,'WEST')
     assert_equal([robot.x, robot.y, robot.direction], [1,2,'WEST'])
   end
 
   def test_move_possible
-    robot = Robot.new('0', '0', 'NORTH')
     robot.move(double.expect(:forbid_move?, false, [0, 1]))
     assert_equal([robot.x, robot.y], [0, 1])
   end
 
   def test_move_impossible
-    robot = Robot.new('0', '0', 'NORTH')
     robot.move(double.expect(:forbid_move?, true, [0, 1]))
     assert_equal([robot.x, robot.y], [0, 0])
   end
@@ -28,19 +25,16 @@ class TestRobot < Minitest::Test
   end
 
   def test_turn_right
-    robot = Robot.new('0', '0', 'NORTH')
     robot.turn_right
     assert_equal(robot.direction, 'EAST')
   end
 
   def test_turn_left
-    robot = Robot.new('0', '0', 'NORTH')
     robot.turn_left
     assert_equal(robot.direction, 'WEST')
   end
 
   def test_report
-    robot = Robot.new('0', '0', 'NORTH')
     assert_equal(robot.report, '0,0,NORTH')
   end
 
@@ -48,6 +42,10 @@ private
 
   def double
     MiniTest::Mock.new
+  end
+
+  def robot
+    @robot ||= Robot.new
   end
 
 end
