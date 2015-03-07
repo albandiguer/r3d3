@@ -13,6 +13,10 @@ class Robot
   attr_accessor :x, :y, :direction
 
   def initialize(x = '0', y = '0', direction = 'NORTH')
+    place(x, y, direction)
+  end
+
+  def place(x, y, direction)
     @x = x.to_i
     @y = y.to_i
     @direction = direction

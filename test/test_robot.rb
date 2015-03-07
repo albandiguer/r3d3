@@ -3,6 +3,12 @@ require_relative '../lib/r3d3/models/robot'
 
 class TestRobot < Minitest::Test
 
+  def test_place
+    robot = Robot.new
+    robot.place(1,2,'WEST')
+    assert_equal([robot.x, robot.y, robot.direction], [1,2,'WEST'])
+  end
+
   def test_move_possible
     robot = Robot.new('0', '0', 'NORTH')
     robot.move(double.expect(:forbid_move?, false, [0, 1]))
