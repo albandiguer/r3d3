@@ -1,16 +1,30 @@
 # R3d3
+             _
+            [ ]
+           (   )
+            |>|
+         __/===\__
+        //| o=o |\\
+      <]  | o=o |  [>
+          \=====/
+         / / | \ \
+        <_________>
 
-## Have the fun
+## How to play
+
+The gem has been pushed onto rubygems.org so to play you can just 
 
 ```bash
 gem install 'r3d3'
-bin/r3d3
+r3d3
 ```
 
-## Development
+## Checkout the code and test
 
-After checking out the repo, run `bin/setup` to install dependencies. Then, run `bin/console` for an interactive prompt that will allow you to experiment.
 
-Use `bin/test` to run the test suite
-
+```bash
+git checkout https://github.com/albandiguer/r3d3.git
+cd r3d3
+bin/test
+```
 
