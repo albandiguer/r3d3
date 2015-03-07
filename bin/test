@@ -1,0 +1,4 @@
+#!/bin/bash
+
+for file in test/*.rb; do ruby -Itest $file; done
+
