@@ -33,7 +33,7 @@ class Robot
   end
 
   def turn_right
-    @direction = DIRECTIONS[current_direction_index + 1]
+    @direction = DIRECTIONS[(current_direction_index + 1) % 4]
   end
 
   def report

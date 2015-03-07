@@ -34,6 +34,12 @@ class TestRobot < Minitest::Test
     assert_equal(robot.direction, 'WEST')
   end
 
+  def test_turn_right_from_west
+    robot.place(0,0,'WEST')
+    robot.turn_right
+    assert_equal('NORTH', robot.direction)
+  end
+
   def test_report
     assert_equal(robot.report, '0,0,NORTH')
   end
