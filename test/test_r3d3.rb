@@ -1,6 +1,6 @@
 require 'minitest_helper'
-require_relative '../lib/r3d3/robot'
-require_relative '../lib/r3d3/table'
+require_relative '../lib/r3d3/models/robot'
+require_relative '../lib/r3d3/models/table'
 
 class TestR3d3 < Minitest::Test
 
