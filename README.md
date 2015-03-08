@@ -1,4 +1,5 @@
 # R3d3
+[![Build Status](https://travis-ci.org/albandiguer/r3d3.svg?branch=master)](https://travis-ci.org/albandiguer/r3d3)
              _
             [ ]
            (   )
