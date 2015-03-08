@@ -1,5 +1,6 @@
 # R3d3
 [![Build Status](https://travis-ci.org/albandiguer/r3d3.svg?branch=master)](https://travis-ci.org/albandiguer/r3d3)
+[![Code Climate](https://codeclimate.com/github/albandiguer/r3d3/badges/gpa.svg)](https://codeclimate.com/github/albandiguer/r3d3)
 
              _
             [ ]
